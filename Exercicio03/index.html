@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Recebr um array de 3 elementos, e mostrá-lo ao contrário</p>
+    <script>
+      let vetores = [];
+      for (let i = 0; i < 3; i++) {
+        vetores[i] = prompt(`${i + 1}° elemento: `);
+      }
+      const vetorReverso = vetores.toReversed();
+      console.log(vetores);
+      console.log(vetorReverso);
+    </script>
+  </body>
+</html>

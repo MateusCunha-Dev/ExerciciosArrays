@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Receber um array de tamanho 3 e ordená-lo</p>
+
+    <script>
+      let numeros = [];
+      for (let i = 0; i < 3; i++) {
+        numeros[i] = Number(prompt(`${i + 1}° número: `));
+        while (isNaN(numeros[i])) {
+          alert("Erro! Entre apenas com números. Tente novamente:");
+          numeros[i] = Number(prompt(`${i + 1}° número: `));
+        }
+      }
+      let numerosOrdenados = numeros.toSorted((a, b) => a - b);
+      console.log(`Array original = ${numeros}`);
+      console.log(`Array ordenado = ${numerosOrdenados}`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Crie uma função que recebe um vetor e um número. Ela deve mostrar todos os
+      índices onde esse número aparece no vetor
+    </p>
+
+    <script>
+      function verificarIndices(vetor, numero) {
+        console.log(`Vetor = {${vetor}}`);
+        console.log(`Número escolhido = ${numero}`);
+        console.log(`Abaixo os índices do vetor aonde o número ${numero} aparece:`);
+
+        for (let i = 0; i < vetor.length; i++) {
+          if (vet[i] === numero) {
+            console.log(`${i}° índice tem o valor de ${numero}`);
+          }
+        }
+      }
+
+      let vet = [5, 1, 4, -2, 5, 1, 5];
+      let num = 5;
+      verificarIndices(vet, num);
+    </script>
+  </body>
+</html>

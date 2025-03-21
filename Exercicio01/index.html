@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Dado um array de string e um array numérico, ordená-lo</p>
+    <script>
+      
+      const frutas = ["maça", "laranja", "kiwi", "abacaxi", "tangerina", "morango"];
+      const numeros = [3, -2, 0, 11, 5, 7];
+
+      //para ordenar array de strings, basta usar o toSorted()
+      const frutasOrdenadas = frutas.toSorted();
+      //para ordenar numericamente, use a função abaixo
+      const numerosOrdenados = numeros.toSorted((a, b) => a - b);
+
+      console.log(frutasOrdenadas)
+      console.log(numerosOrdenados)
+
+
+    </script>
+  </body>
+</html>

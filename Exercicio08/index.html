@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function calcularFatorial() {
+        const fatorial = Number(
+          prompt("Escolha o número que deseja ter o fatorial: ")
+        );
+        if (isNaN(fatorial) || fatorial < 0 || !Number.isInteger(fatorial)) {
+          alert(
+            "Entrada inválida! Entre apenas com números inteiros positivos igual ou maiores que 0"
+          );
+          return;
+        }
+
+        let resultado = 1;
+        for (let i = 1; i <= fatorial; i++) {
+          resultado *= i;
+        }
+
+        console.log(`Fatorial de ${fatorial}! = ${resultado}`);
+      }
+
+      calcularFatorial();
+    </script>
+  </body>
+</html>

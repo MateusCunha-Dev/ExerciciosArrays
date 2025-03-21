@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Receber um array de N elementos e mostrá-lo ao contrário</p>
+    <script>
+      let vet = [];
+      const n = Number(prompt("Qual o tamanho do array?"));
+      for (let i = 0; i < n; i++) {
+        vet[i] = prompt(`${i + 1}° elemento:`);
+      }
+      const vetReverso = vet.toReversed();
+      console.log(`Vetor original: ${vet}`);
+      console.log(`Vetor reverso: ${vetReverso}`);
+    </script>
+  </body>
+</html>
